@@ -19,4 +19,4 @@ Spring Boot’s `/actuator` endpoints can leak sensitive system data, expose int
 
 Example with **ffuf**:
 ```bash
-ffuf -u https://target.com/FUZZ -w wordlists/actuator-paths.txt -mc all
+ffuf -u https://target.com/FUZZ -w wordlists/ActuatorEndpointFuzz.txt -mc all
